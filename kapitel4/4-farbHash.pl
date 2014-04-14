@@ -9,11 +9,11 @@
 @farben = keys(%farbenspiel);
 print qq|Im System sind folgende Farben vorhanden: |;
 foreach(@farben){
-	print qq|$_\n|;
+	print qq|\n$_|;
 }
 
-print qq|Geben Sie eine Farbe ein: |;
+print qq|\nGeben Sie eine Farbe ein: |;
 chomp($farbe = <STDIN>); #entfernt alle Sonderzeichen; Newline
 
-print $farbenspiel{$farbe};
+defined($farbenspiel{$farbe}) ? print $farbenspiel{$farbe} : print "Farbe nicht vorhanden!";
 
