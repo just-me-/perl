@@ -1,0 +1,18 @@
+#!/usr/bin/env perl -w
+
+use strict;
+use English;
+
+use vars qw /
+	$m
+	$s
+/;
+
+print "String, bitte: ";
+$s= <STDIN>;
+
+print "Wie oft: ";
+chomp($m = <STDIN>);
+
+print $s x $m . "\n";
+

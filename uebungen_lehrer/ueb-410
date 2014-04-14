@@ -1,0 +1,13 @@
+#!/usr/bin/env perl -w
+
+use strict;
+use English;
+
+use vars qw /
+	$c
+/;
+
+foreach $c ( 1 ... 32 ) {
+	print $c * $c . ' ';
+}
+print "\n";

@@ -1,0 +1,19 @@
+#!/usr/bin/env perl -w
+
+use strict;
+use English;
+
+use vars qw /
+	$c
+	@s
+/;
+
+print 'Mehrere Strings, bitte (mit ^D abschliessen):' . "\n";
+@s= <STDIN>;
+
+$c = @s;
+$c -= 1;
+
+while ( $c >= 0 ) {
+	print $s[$c--];
+}

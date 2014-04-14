@@ -1,0 +1,18 @@
+#!/usr/bin/env perl -w
+
+use strict;
+use English;
+
+use vars qw /
+	$t
+/;
+
+print 'Temperatur, bitte: ';
+
+if ( $t > 30 ) {
+	print 'Zu heiss' . "\n";
+} elsif ( $t < 20 ) {
+	print 'Zu kalt' . "\n";
+} else {
+	print 'Passt' . "\n";
+}

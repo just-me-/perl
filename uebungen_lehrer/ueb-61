@@ -1,0 +1,28 @@
+#!/usr/bin/env perl -w
+
+use strict;
+use English;
+
+use vars qw /
+	$m
+/;
+
+sub mon ($) {
+	my $m = shift;
+
+	my @mon = ( qw / Nil Januar Februar
+		Maerz April Mai Juni Juli August
+		September Oktobaer Novembaer Dezembaer / );
+
+	return $mon[$m] if ( $mon[$m] );
+	return $mon[0];
+}
+
+print "Eine Zahl (1...12), bitte: ";
+chomp($m = <STDIN>);
+
+if ( ($m =~ /\d+/) and ($m > 0 and $m < 13) ) {
+	print mon($m) . "\n";
+} else {
+	print "Wuff! Wuff!" . "\n";
+}

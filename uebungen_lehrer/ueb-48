@@ -1,0 +1,24 @@
+#!/usr/bin/env perl -w
+
+use strict;
+use English;
+
+use vars qw /
+	%map
+	$c
+/;
+
+%map = (
+	blau  => "Ozean",
+	rot   => "Apfel",
+	gruen => "Wiese"
+);
+
+print 'Farbe, bitte: ';
+chomp($c = <STDIN>);
+
+if ( $map{$c} ) {
+	print $map{$c} . "\n";
+} else {
+	print 'Wuff! Wuff!' . "\n";
+}

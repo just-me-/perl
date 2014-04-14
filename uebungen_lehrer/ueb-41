@@ -1,0 +1,7 @@
+#!/usr/bin/env perl -w
+
+use strict;
+use english;
+
+print 2 * 3.14159 * 12.5 . "\n";
+

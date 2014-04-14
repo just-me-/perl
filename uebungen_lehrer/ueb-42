@@ -1,0 +1,14 @@
+#!/usr/bin/env perl -w
+
+use strict;
+use English;
+
+use vars qw /
+	$rad
+/;
+
+print "Radius, bitte: ";
+chomp($rad = <STDIN>);
+
+print 2 * 3.14159 * $rad . "\n";
+

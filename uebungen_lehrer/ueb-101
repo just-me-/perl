@@ -1,0 +1,17 @@
+#!/usr/bin/env perl -w
+
+use strict;
+use English;
+
+use vars qw /
+	$m
+/;
+
+$SIG{INT} = \&got_int;
+
+sub got_int {
+	 $SIG{INT} = \&got_int;
+    print "\n" . 'Autsch' . "\n";
+};
+
+sleep(120);

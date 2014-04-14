@@ -1,0 +1,15 @@
+#!/usr/bin/env perl -w
+
+use strict;
+use English;
+
+use vars qw /
+	$c
+/;
+
+my $c = 0;
+
+while ( <> ) {
+	$c += 1 if ( /a/i and /e/i and /i/i and /o/i and /u/i );
+}
+print  $c . "\n";

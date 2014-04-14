@@ -1,0 +1,20 @@
+#!/usr/bin/perl -w
+
+use strict;
+use English;
+
+use vars qw /
+	%map
+	$c
+/;
+
+%map = (
+	blau  => "Ozean",
+	rot   => "Apfel",
+	gruen => "Wiese"
+);
+
+print 'Farbe, bitte: ';
+chomp($c = <STDIN>);
+
+print $map{$c} . "\n";

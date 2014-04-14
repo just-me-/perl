@@ -1,0 +1,13 @@
+#!/usr/bin/env perl -w
+
+use strict;
+use English;
+
+use vars qw /
+	$c
+/;
+
+for ( $c = 1 ; $c <= 300 ; $c++ ) {
+	print $c . ' ' unless ( $c % 5 );
+}
+print "\n";
