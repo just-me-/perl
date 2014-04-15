@@ -1,0 +1,58 @@
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+uucp:x:10:14:uucp:/var/spool/uucp:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+gopher:x:13:30:gopher:/var/gopher:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:99:99:Nobody:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+avahi-autoipd:x:170:170:Avahi IPv4LL Stack:/var/lib/avahi-autoipd:/sbin/nologin
+oprofile:x:16:16:Special user account to be used by OProfile:/home/oprofile:/sbin/nologin
+vcsa:x:69:69:virtual console memory owner:/dev:/sbin/nologin
+rtkit:x:499:497:RealtimeKit:/proc:/sbin/nologin
+hsqldb:x:96:96::/var/lib/hsqldb:/sbin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/cache/rpcbind:/sbin/nologin
+abrt:x:173:173::/etc/abrt:/sbin/nologin
+apache:x:48:48:Apache:/var/www:/sbin/nologin
+saslauth:x:498:76:"Saslauthd user":/var/empty/saslauth:/sbin/nologin
+postfix:x:89:89::/var/spool/postfix:/sbin/nologin
+haldaemon:x:68:68:HAL daemon:/:/sbin/nologin
+ntp:x:38:38::/etc/ntp:/sbin/nologin
+avahi:x:70:70:Avahi mDNS/DNS-SD Stack:/var/run/avahi-daemon:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+nfsnobody:x:65534:65534:Anonymous NFS User:/var/lib/nfs:/sbin/nologin
+pulse:x:497:495:PulseAudio System Daemon:/var/run/pulse:/sbin/nologin
+gdm:x:42:42::/var/lib/gdm:/sbin/nologin
+webalizer:x:67:67:Webalizer:/var/www/usage:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+mysql:x:27:27:MySQL Server:/var/lib/mysql:/bin/bash
+tcpdump:x:72:72::/:/sbin/nologin
+kurs0:x:500:500:kurs0:/home/kurs0:/bin/bash
+kurs1:x:501:501:kurs1:/home/kurs1:/bin/bash
+kurs2:x:502:502:kurs2:/home/kurs2:/bin/bash
+kurs3:x:503:503:kurs3:/home/kurs3:/bin/bash
+kurs4:x:504:504:kurs4:/home/kurs4:/bin/bash
+kurs5:x:505:505:kurs5:/home/kurs5:/bin/bash
+kurs6:x:506:506:kurs6:/home/kurs6:/bin/bash
+kurs7:x:507:507:kurs7:/home/kurs7:/bin/bash
+kurs8:x:508:508:kurs8:/home/kurs8:/bin/bash
+kurs9:x:509:509:kurs9:/home/kurs9:/bin/bash
+kurs10:x:510:510:kurs10:/home/kurs10:/bin/bash
+kurs11:x:511:511:kurs11:/home/kurs11:/bin/bash
+kurs12:x:512:512:kurs12:/home/kurs12:/bin/bash
+kurs13:x:513:513:kurs13:/home/kurs13:/bin/bash
+kurs14:x:514:514:kurs14:/home/kurs14:/bin/bash
+kurs15:x:515:515:kurs15:/home/kurs15:/bin/bash
+kurs16:x:516:516:kurs16:/home/kurs16:/bin/bash
+kurs17:x:517:517:kurs17:/home/kurs17:/bin/bash
+kurs18:x:518:518:kurs18:/home/kurs18:/bin/bash
+kurs19:x:519:519:kurs19:/home/kurs19:/bin/bash
+kurs20:x:520:520:kurs20:/home/kurs20:/bin/bash
