@@ -10,41 +10,40 @@ my $day = 0;
 my $month = 0;
 
 sub new{
-	my ($day, $month) = @_;
-	my $self = {};
-	$self->$day = $day;
-	$self->$month = $month; 
+	my ($self, $day, $month) = @_;
+	$self->{$day} = $day;
+	$self->{$month} = $month; 
 	return $self; 
 }
 
 sub getOogaDay{
 	my $self = @_;
-	return $oDays[$self->$day];
+	return $oDays[$self->{$day}];
 }
 
 sub getOogaMonth{
 	my $self = @_;
-        return $oMonths[$self->$month];
+        return $oMonths[$self->{$month}];
 }
 
 sub getGermanDay{
 	my $self = @_;
-        return $gDays[$self->$day];
+        return $gDays[$self->{$day}];
 }
 
 sub getGermanMonth{
 	my $self = @_;
-        return $gMonths[$self->$month];
+        return $gMonths[$self->{$month}];
 }
 
 sub setDay{
 	my ($self, $day) = @_;
-	$self->$day = $day;
+	$self->{$day} = $day;
 }
 
 sub setMonth{
 	my ($self, $month) = @_;
-        $self->$month = $month;
+        $self->{$month} = $month;
 }
 
 1;
