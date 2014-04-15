@@ -5,7 +5,7 @@ $myMonat = <>;
 print &getMonat($myMonat);
 
 my ( $sec, $min, $hour, $mday, $mon, $year ) = localtime;
-print sprintf "\n%04d%02d%02d", $year+1900, $mon+1, $mday;
+print sprintf "\n%04d-%02d-%02d", $year+1900, $mon+1, $mday;
 
 sub getMonat{
 	$monat = shift; 
