@@ -1,49 +1,51 @@
 package Translate;
 
+use v5.10;
+
 my @gDays = qw|Nil Montag Dienstag Mittwoch Donnerstag Freitag Samstag Sonntag|;
 my @gMonths = qw|Nil Januar Februar März April Mai Juni Juli August September 
                 Oktober November Dezember|;
 my @oDays = qw|Nil ark dip wap sen pop sep kir|;
 my @oMonths = qw|Nil diz pod bod rod sip wax lin sen kun fiz nap dep|;
 
-my $day = 0;
-my $month = 0;
+my $myday = 0;
+my $mymonth = 0;
 
 sub new{
 	my ($self, $day, $month) = @_;
-	$self->{$day} = $day;
-	$self->{$month} = $month; 
+	$myday = $day;
+	$mymonth = $month; 
 	return $self; 
 }
 
 sub getOogaDay{
 	my $self = @_;
-	return $oDays[$self->{$day}];
+	return $oDays[$myday];
 }
 
 sub getOogaMonth{
 	my $self = @_;
-        return $oMonths[$self->{$month}];
+        return $oMonths[$mymonth];
 }
 
 sub getGermanDay{
 	my $self = @_;
-        return $gDays[$self->{$day}];
+        return $gDays[$myday];
 }
 
 sub getGermanMonth{
 	my $self = @_;
-        return $gMonths[$self->{$month}];
+        return $gMonths[$mymonth];
 }
 
 sub setDay{
 	my ($self, $day) = @_;
-	$self->{$day} = $day;
+	$myday = $day;
 }
 
 sub setMonth{
 	my ($self, $month) = @_;
-        $self->{$month} = $month;
+        $mymonth = $month;
 }
 
 1;
